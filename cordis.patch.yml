@@ -1,0 +1,16 @@
+# dsh-intelligent-ui — bundle patch
+#
+# Mounts the Host half of the plugin. The Client half is picked up from the
+# package's "dsh.client" section and served to the Web client automatically.
+#
+# Install (local development):
+#   plugin_manager install_bundle -> target: <absolute path of this directory>
+# or from a shell:
+#   dsh plugin --profile desktop add link:<absolute path of this directory>
+#
+# This row is the only thing that touches the profile configuration tree; the
+# DSH source itself is never modified.
+- insert:
+    - id: intelligent-ui
+      name: 'dsh-intelligent-ui'
+      config: {}

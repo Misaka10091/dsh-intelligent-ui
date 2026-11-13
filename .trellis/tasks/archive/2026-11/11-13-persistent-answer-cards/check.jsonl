@@ -1,0 +1,2 @@
+{"file":".trellis/tasks/11-13-persistent-answer-cards/prd.md","reason":"Verify reported bug is resolved across completed and reloaded turns"}
+{"file":".trellis/tasks/11-13-persistent-answer-cards/implement.md","reason":"Required test and browser gates"}

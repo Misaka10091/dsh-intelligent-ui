@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "title": "北京中轴线一日步行",
+  "subtitle": "从天安门出发，穿过故宫三大殿，登景山万春亭俯瞰全景，傍晚钻进南锣鼓巷的胡同里觅食。全程约 6 公里。",
+  "meta": [
+    { "icon": "walk", "text": "步行约 6 km" },
+    { "icon": "clock", "text": "约 8 小时" },
+    { "icon": "pin", "text": "顺路中轴线" },
+    { "icon": "ticket", "text": "故宫需提前预约" }
+  ],
+  "blocks": [
+    {
+      "type": "map",
+      "markers": [
+        { "label": "天安门", "lat": 39.9087, "lng": 116.3975, "tone": "info" },
+        { "label": "故宫博物院", "lat": 39.9163, "lng": 116.3972, "tone": "info" },
+        { "label": "景山万春亭", "lat": 39.925, "lng": 116.396, "tone": "success" },
+        { "label": "南锣鼓巷", "lat": 39.9333, "lng": 116.403, "tone": "warning" }
+      ],
+      "route": [
+        [39.9087, 116.3975],
+        [39.9163, 116.3972],
+        [39.925, 116.396],
+        [39.9333, 116.403]
+      ]
+    },
+    {
+      "type": "timeline",
+      "items": [
+        { "time": "09:00", "title": "故宫中轴线（约 3.5 小时）", "desc": "太和殿 → 乾清宫 → 御花园，一路向北走中轴线；珍宝馆、钟表馆各加约 40 分钟。", "tag": "需预约" },
+        { "time": "12:30", "title": "神武门出宫 · 简餐", "desc": "出宫先在护城河转角拍故宫角楼，这是全程最经典的机位，再找地方吃午饭。" },
+        { "time": "13:30", "title": "景山公园 · 万春亭（约 1.5 小时）", "desc": "门票 2 元，万春亭正对故宫中轴线，是俯瞰紫禁城金色屋顶全景的唯一机位。", "tag": "登高" },
+        { "time": "15:30", "title": "南锣鼓巷 · 胡同漫游（约 2 小时）", "desc": "从景山东门步行 15 分钟即到。主街热闹，帽儿胡同、雨儿胡同、菊儿胡同更安静耐逛。" },
+        { "time": "17:30", "title": "晚饭 · 返程", "desc": "附近吃完晚饭，从南锣鼓巷站乘地铁 8 号线或 6 号线返程。" }
+      ]
+    },
+    {
+      "type": "gallery",
+      "items": [
+        { "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Hall_of_Supreme_Harmony.jpg/640px-The_Hall_of_Supreme_Harmony.jpg", "title": "故宫太和殿", "caption": "金銮殿，中轴线核心" },
+        { "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Jingshan_Park_Beijing.jpg/640px-Jingshan_Park_Beijing.jpg", "title": "景山万春亭", "caption": "俯瞰紫禁城全景" },
+        { "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Nanluoguxiang.jpg/640px-Nanluoguxiang.jpg", "title": "南锣鼓巷", "caption": "老胡同与新小店" }
+      ]
+    },
+    {
+      "type": "calculator",
+      "label": "游览时长 → 预估步行里程",
+      "min": 3,
+      "max": 10,
+      "step": 0.5,
+      "value": 8,
+      "unit": "小时",
+      "formula": "v * 0.75"
+    },
+    {
+      "type": "form",
+      "id": "prefs",
+      "title": "定制我的路线",
+      "description": "填好偏好并提交，我会按你的节奏重新调整时间线和推荐。",
+      "fields": [
+        {
+          "type": "segmented",
+          "name": "pace",
+          "label": "节奏",
+          "value": "relaxed",
+          "options": [
+            { "value": "relaxed", "label": "从容不迫" },
+            { "value": "packed", "label": "紧凑打卡" }
+          ]
+        },
+        { "type": "time", "name": "start", "label": "出发时间", "value": "08:30" },
+        {
+          "type": "radioCards",
+          "name": "food",
+          "label": "吃饭偏好",
+          "value": "snack",
+          "options": [
+            { "value": "snack", "label": "胡同小吃", "desc": "炸酱面、奶酪、糖葫芦边走边吃" },
+            { "value": "sitdown", "label": "坐下来吃一顿", "desc": "四合院餐厅或烤鸭店，预留 1.5 小时" }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "extras",
+          "label": "顺便告诉我",
+          "options": [
+            { "value": "sunset", "label": "想在景山等日落" },
+            { "value": "treasure", "label": "故宫加看珍宝馆钟表馆" },
+            { "value": "family", "label": "带老人或小孩同行" }
+          ]
+        },
+        {
+          "type": "textarea",
+          "name": "notes",
+          "label": "其他要求",
+          "placeholder": "例如：想看升旗、不吃辣、明天天气不好想改室内……"
+        }
+      ],
+      "submitLabel": "提交偏好，生成我的专属路线",
+      "submitTemplate": "请按我的偏好重排北京中轴线一日步行路线：节奏={{pace}}，出发时间={{start}}，吃饭={{food}}，附加需求={{extras}}，其他：{{notes}}。"
+    }
+  ]
+}

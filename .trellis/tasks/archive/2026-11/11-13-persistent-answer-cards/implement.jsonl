@@ -1,0 +1,3 @@
+{"file":".trellis/tasks/11-13-persistent-answer-cards/prd.md","reason":"Visibility, replay and session isolation acceptance criteria"}
+{"file":".trellis/tasks/11-13-persistent-answer-cards/design.md","reason":"Supported slot boundary and Chat ownership"}
+{"file":".trellis/spec/frontend/quality-guidelines.md","reason":"Frontend verification conventions"}

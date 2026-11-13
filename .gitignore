@@ -1,0 +1,10 @@
+node_modules/
+*.local
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log
+
+# Local browser verification screenshots
+/artifacts/
